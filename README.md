@@ -3,10 +3,6 @@
 ## AIM
 
 To develop a Recurrent Neural Network model for stock price prediction.
-
-## Problem Statement and Dataset
-
-
 ## DESIGN STEPS
 
 ### STEP 1:
