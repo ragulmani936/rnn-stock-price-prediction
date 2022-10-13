@@ -85,7 +85,7 @@ plt.show()
 
 ### True Stock Price, Predicted Stock Price vs time
 
-![output]()
+![output](https://github.com/ragulmani936/rnn-stock-price-prediction/blob/main/DL%201.jpg)
 
 ### Mean Square Error
 
