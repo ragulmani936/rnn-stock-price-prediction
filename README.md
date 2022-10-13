@@ -6,9 +6,6 @@ To develop a Recurrent Neural Network model for stock price prediction.
 
 ## Problem Statement and Dataset
 
-## Neural Network Model
-
-Include the neural network model diagram.
 
 ## DESIGN STEPS
 
@@ -38,6 +35,7 @@ dataset_train.head()
 train_set = dataset_train.iloc[:,1:2].values
 type(train_set)
 train_set.shape
+plt.plot(np.arange(0,1259),train_set)
 sc = MinMaxScaler(feature_range=(0,1))
 training_set_scaled = sc.fit_transform(train_set)
 training_set_scaled.shape
@@ -62,6 +60,9 @@ dataset_test = pd.read_csv('testset.csv')
 test_set = dataset_test.iloc[:,1:2].values
 test_set.shape
 dataset_total = pd.concat((dataset_train['Open'],dataset_test['Open']),axis=0)
+dataset_total.shape
+inputs = dataset_total.values
+inputs
 inputs = dataset_total.values
 inputs = inputs.reshape(-1,1)
 inputs_scaled=sc.transform(inputs)
